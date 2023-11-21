@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.3.8/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <title>Vue Email List</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>API Generator mail</h1>
+        <button @click="generatorEmails()"> Genera Emails</button>
+            <ul>
+                <li v-for="email in emails">
+                    {{email}}
+                </li>
+            </ul>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
